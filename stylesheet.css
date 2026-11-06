@@ -193,3 +193,18 @@ footer {
 .exp-body { flex: 1; min-width: 0; }
 .exp-body p { margin: 4px 0 0; font-size: 14px; color: #374151; }
 @media (max-width: 720px) { .exp-logo { flex-basis: 44px; height: 44px; } }
+
+/* ---------- Citation / star pills ---------- */
+.plinks { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 0; }
+.stats { display: inline-flex; gap: 8px; margin-left: auto; }
+.plinks a.stat {
+  display: inline-flex; align-items: center; gap: 4px; margin: 0;
+  padding: 1px 9px; border: 1px solid var(--border); border-radius: 999px;
+  font-size: 12px; font-weight: 600; color: var(--muted); background: #fafaf9;
+  font-variant-numeric: tabular-nums;
+}
+.plinks a.stat::before { content: none; }
+.plinks a.stat svg { width: 12px; height: 12px; fill: currentColor; }
+.plinks a.stat:hover { color: var(--accent); border-color: var(--accent); }
+.plinks a.stat[data-star] svg { fill: #e3b341; }
+.chip-count { margin-left: 4px; padding-left: 8px; border-left: 1px solid var(--border); color: var(--muted); font-size: 13px; }

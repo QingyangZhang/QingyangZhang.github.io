@@ -1,0 +1,30 @@
+{
+  "updated": "2026-11-06",
+  "total_citations": 940,
+  "papers": {
+    "qmf": {
+      "citations": 310,
+      "stars": 131
+    },
+    "survey": {
+      "citations": 266,
+      "stars": 53
+    },
+    "empo": {
+      "citations": 145,
+      "stars": 106
+    },
+    "cml": {
+      "citations": 90,
+      "stars": 20
+    },
+    "come": {
+      "citations": 50,
+      "stars": 24
+    },
+    "dul": {
+      "citations": 19,
+      "stars": 11
+    }
+  }
+}
