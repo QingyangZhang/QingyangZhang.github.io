@@ -1,77 +1,177 @@
-/* 移除原有的@font-face规则，直接使用系统预装的Times New Roman */
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 14px;
+:root {
+  --bg: #fafaf9;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #6b7280;
+  --border: #e7e5e4;
+  --accent: #1d4ed8;
+  --accent-soft: #eff4ff;
+  --hl: #c2410c;
+  --hl-soft: #fff4ed;
+  --radius: 12px;
 }
 
-strong {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 14px;
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-heading {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 22px;
+a { color: var(--accent); text-decoration: none; transition: color .15s; }
+a:hover { color: var(--hl); }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(250, 250, 249, .85);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: 880px; margin: 0 auto; padding: 12px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand { font-weight: 700; color: var(--text); }
+.nav-links a { color: var(--muted); margin-left: 22px; font-size: 14px; }
+.nav-links a:hover { color: var(--text); }
+
+/* ---------- Layout ---------- */
+.container { max-width: 880px; margin: 0 auto; padding: 40px 24px 24px; }
+
+section { margin-top: 56px; }
+
+h2 {
+  font-size: 22px; font-weight: 700; margin: 0 0 20px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+h2.sub { margin-top: 40px; }
+
+/* ---------- Profile ---------- */
+.profile { display: flex; gap: 40px; align-items: center; }
+.profile-text { flex: 1; }
+.profile h1 { font-size: 34px; margin: 0 0 16px; line-height: 1.2; letter-spacing: -.5px; }
+.profile h1 .cn { font-weight: 400; color: var(--muted); font-size: 26px; margin-left: 6px; }
+.subtitle { color: var(--muted); margin: 6px 0 16px; }
+.profile p { margin: 0 0 12px; }
+
+.avatar img {
+  width: 220px; height: 220px; object-fit: cover; border-radius: 50%;
+  border: 4px solid #fff; box-shadow: 0 6px 24px rgba(0, 0, 0, .1);
+  display: block; transition: transform .25s;
+}
+.avatar img:hover { transform: scale(1.03); }
+
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 14px; border-radius: 999px;
+  background: var(--card); border: 1px solid var(--border);
+  color: var(--text); font-size: 14px;
+  transition: all .15s;
+}
+.chip svg { width: 16px; height: 16px; fill: currentColor; }
+.chip:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+/* ---------- News ---------- */
+.news { list-style: none; padding: 0; margin: 0; max-height: 300px; overflow-y: auto; }
+.news li { display: flex; gap: 16px; padding: 7px 0; }
+.news .date {
+  flex-shrink: 0; width: 72px;
+  font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; padding-top: 1px;
+}
+.hl { color: var(--hl); font-weight: 600; }
+
+/* ---------- Papers ---------- */
+.paper {
+  display: flex; gap: 24px; align-items: center;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px; margin-bottom: 16px;
+  transition: box-shadow .2s, transform .2s;
+}
+.paper:hover { box-shadow: 0 8px 28px rgba(0, 0, 0, .07); transform: translateY(-2px); }
+.thumb { flex: 0 0 240px; }
+.thumb img {
+  width: 240px; height: 140px; object-fit: contain;
+  border-radius: 8px; background: #f5f5f4; display: block;
+}
+.info { flex: 1; min-width: 0; }
+.info h3 { font-size: 16px; margin: 0 0 6px; line-height: 1.4; }
+.authors { margin: 0 0 8px; font-size: 14px; color: #374151; }
+.authors b { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.note { color: var(--muted); font-size: 13px; }
+.venue { margin: 0 0 8px; }
+.badge {
+  display: inline-block; font-size: 12px; font-weight: 600;
+  padding: 2px 10px; border-radius: 6px; margin-right: 6px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.badge.accent { background: var(--hl-soft); color: var(--hl); }
+.desc { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
+.plinks { margin: 0; }
+.plinks a {
+  font-size: 13px; font-weight: 600; margin-right: 14px;
+}
+.plinks a::before { content: "→ "; }
+
+/* ---------- Models ---------- */
+.models { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.model {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px; transition: box-shadow .2s, transform .2s;
+}
+.model:hover { box-shadow: 0 8px 28px rgba(0, 0, 0, .07); transform: translateY(-2px); }
+.model-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.model-head h3 { font-size: 18px; margin: 0 6px 0 0; }
+.model-head .badge { margin-right: 0; }
+.section-intro { margin: -8px 0 16px; color: var(--muted); font-size: 14px; }
+.role { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: var(--hl); }
+.model { display: flex; flex-direction: column; border-top: 3px solid var(--accent); }
+.model .plinks { margin-top: auto; }
+
+/* ---------- Timeline ---------- */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 20px; border-left: 2px solid var(--border); }
+.timeline li { position: relative; padding: 0 0 22px 4px; }
+.timeline li::before {
+  content: ""; position: absolute; left: -28px; top: 7px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--card); border: 3px solid var(--accent);
+}
+.timeline li:last-child { padding-bottom: 0; }
+.tl-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; }
+.tl-date { margin-left: auto; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.timeline p { margin: 4px 0 0; font-size: 14px; color: #374151; }
+
+/* ---------- Misc ---------- */
+.misc { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.misc > div { margin-bottom: 20px; }
+.misc p { margin: 0; }
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  color: var(--muted); font-size: 13px;
 }
 
-papertitle {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-name {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 32px;
-}
-
-/* 保持其他样式不变 */
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-/* 模态框字体设置 */
-.modal {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.modal-content {
-  font-family: 'Times New Roman', Times, serif;
+/* ---------- Mobile ---------- */
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .profile { flex-direction: column-reverse; gap: 20px; text-align: left; }
+  .avatar img { width: 160px; height: 160px; }
+  .profile h1 { font-size: 28px; }
+  .models { grid-template-columns: 1fr; }
+  .paper { flex-direction: column; align-items: stretch; }
+  .thumb { flex: none; }
+  .thumb img { width: 100%; height: 180px; }
+  .tl-date { margin-left: 0; width: 100%; }
 }

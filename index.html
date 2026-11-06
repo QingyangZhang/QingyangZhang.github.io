@@ -1,304 +1,212 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Qingyang Zhang</title>
-
-  <meta name="author" content="Jon Barron">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" href="images/zqy.jpg">
+  <title>Qingyang Zhang | 张庆阳</title>
+  <meta name="author" content="Qingyang Zhang">
+  <meta name="description" content="Qingyang Zhang (张庆阳), PhD student at Tianjin University. Research on LLM RL, generalization and multimodal learning.">
+  <link rel="icon" href="images/zqy.jpg">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Qingyang Zhang 张庆阳</name>
-              </p>
-                <p>
-                I am a 2nd-year PhD student at Tianjin University, supervised by <a href="http://cic.tju.edu.cn/faculty/zhangchangqing/index.html">Prof. Changqing Zhang</a>. My research interests include LLM RL, Generalization and Multimodal Learning.
-                </p>
-            <p>
-            I received my Bachelor's degree in School of Computer Science from Tianjin University. After that, I pursued my Master's in the School of Computer Science at Tianjin University and transitioned into a PhD candidate through the direct doctoral program (2+4) in 2024.
-                </p>
-            <p>
-            Currently, I am a research intern at <strong>Tencent Hunyuan LLM</strong> (Qingyun Talent Program). I also spent wonderful time at Shanghai AI Lab and Tencent AI Lab.
-                </p>
-            <p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Qingyang Zhang</a>
+      <div class="nav-links">
+        <a href="#news">News</a>
+        <a href="#models">Releases</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#misc">Misc</a>
+      </div>
+    </div>
+  </nav>
 
-                <p style="text-align:center">
-                  <a href="mailto:qingyangzhang@tju.edu.cn">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=64vwsrsAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/QingyangZhang">Github</a>&nbsp;/&nbsp;
-                  <a href="data/CV-CN.pdf">中文简历</a> &nbsp;/&nbsp;
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/zqy.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/zqy.jpg" class="hoverZoomLink"></a>
-              </td>
-          </tr>
-        </tbody></table>
+  <main class="container" id="top">
 
+    <!-- ===== Profile ===== -->
+    <header class="profile">
+      <div class="profile-text">
+        <h1>Qingyang Zhang <span class="cn">张庆阳</span></h1>
+        <p>
+          I am a 3rd-year PhD student at Tianjin University, supervised by
+          <a href="http://cic.tju.edu.cn/faculty/zhangchangqing/index.html">Prof. Changqing Zhang</a>.
+          My research interests include <b>Agentic RL</b>, <b>On-Policy Distillation (OPD)</b> and <b>Synthetic Data / Environment Scaling</b>.
+        </p>
+        <p>
+          I received my Bachelor's degree from the School of Computer Science, Tianjin University. I then pursued my Master's
+          at the same school and transitioned into a PhD candidate through the direct doctoral program (2+4) in 2024.
+        </p>
+        <p>
+          Currently, I am a research intern in the <b>Post-train Team of Tencent Hunyuan LLM</b> (Qingyun Talent Program),
+          contributing to <a href="https://huggingface.co/tencent/Hy4-preview">Hy4 preview</a> and <a href="https://news.qq.com/rain/a/20261104A08SHF00">Hy4</a>.
+          I also spent wonderful time at Shanghai AI Lab and Tencent AI Lab.
+        </p>
+        <div class="links">
+          <a class="chip" href="mailto:qingyangzhang@tju.edu.cn">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.5l8 5 8-5V6H4Zm16 2.85-7.47 4.67a1 1 0 0 1-1.06 0L4 8.85V18h16V8.85Z"/></svg>Email</a>
+          <a class="chip" href="https://scholar.google.com/citations?user=64vwsrsAAAAJ">
+            <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-6.82 9.5L5 16c0 2.2 3.13 4 7 4s7-1.8 7-4l-.18-3.5L12 16.27 5.18 12.5Z"/></svg>Google Scholar</a>
+          <a class="chip" href="https://github.com/QingyangZhang">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+          <a class="chip" href="data/CV-CN.pdf">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm4 18H6V4h7v5h5v11ZM8 12h8v2H8v-2Zm0 4h8v2H8v-2Z"/></svg>中文简历</a>
+        </div>
+      </div>
+      <a class="avatar" href="images/zqy.jpg"><img src="images/zqy.jpg" alt="Qingyang Zhang"></a>
+    </header>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>News</heading>
-                    <p>
-                <strong>[2026-05]</strong> Joining Tencent Hunyuan LLM as a research intern (Qingyun Talent Program).
-              </p>
-              <p>
-                <strong>[2025-12]</strong> Gave a talk about "LLM RL with Internal Reward" @ BUAA.
-            </p>
-            <p>
-              <strong>[2025-09]</strong> One paper about Unsupervised LLM Reasoning Incentivization has been accepted by NeurIPS as a Spotlight.
-            </p>
-            <p>
-              <strong>[2025-06]</strong> Starting an internship at Shanghai AI Lab, mentored by Dr. Ganqu Cui.
-            </p>
-            <p>
-              <strong>[2025-06]</strong> Gave a talk about "LLM RL with Internal Reward" @ Huawei 2012 Lab.
-            </p>
-            <p>
-              <strong>[2025-01]</strong> One paper about test-time adaption has been accepted by ICLR.
-            </p>
-            <p>
-              <strong>[2024-05]</strong> One paper about Out-of-distribution Detection has been accepted by NeurIPS.
-            </p>
-            <p>
-              <strong>[2024-04]</strong> Starting an internship at Tencent AI Lab, mentored by Dr. Yatao Bian.
-            </p>
-            <p>
-              <strong>[2023-04]</strong> Two paper accepted by ICML including one Oral paper, thanks to all co-authors.
-            </p>
-          </td>
-        </tr>
-      </tbody></table>
+    <!-- ===== News ===== -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">2026.11</span><span><b>Hy4</b> is released! Glad to contribute to its post-training.</span></li>
+        <li><span class="date">2026.08</span><span><b>Hy4 preview</b> (770B-A49B, 1M context) is released and open-sourced. <a href="https://huggingface.co/tencent/Hy4-preview">[HF]</a></span></li>
+        <li><span class="date">2026.05</span><span>Joining <b>Tencent Hunyuan LLM</b> as a research intern (Qingyun Talent Program).</span></li>
+        <li><span class="date">2025.12</span><span>Gave a talk about "LLM RL with Internal Reward" @ BUAA.</span></li>
+        <li><span class="date">2025.09</span><span>One paper about Unsupervised LLM Reasoning Incentivization accepted by <b>NeurIPS</b> as a <span class="hl">Spotlight</span>.</span></li>
+        <li><span class="date">2025.06</span><span>Starting an internship at Shanghai AI Lab, mentored by Dr. Ganqu Cui.</span></li>
+        <li><span class="date">2025.06</span><span>Gave a talk about "LLM RL with Internal Reward" @ Huawei 2012 Lab.</span></li>
+        <li><span class="date">2025.01</span><span>One paper about test-time adaptation accepted by <b>ICLR</b>.</span></li>
+        <li><span class="date">2024.05</span><span>One paper about Out-of-distribution Detection accepted by <b>NeurIPS</b>.</span></li>
+        <li><span class="date">2024.04</span><span>Starting an internship at Tencent AI Lab, mentored by Dr. Yatao Bian.</span></li>
+        <li><span class="date">2023.04</span><span>Two papers accepted by <b>ICML</b>, including one <span class="hl">Oral</span>. Thanks to all co-authors.</span></li>
+      </ul>
+    </section>
 
-    <br>
+    <!-- ===== Models ===== -->
+    <section id="models">
+      <h2>Model Releases</h2>
+      <p class="section-intro">As a member of the Post-train Team at Tencent Hunyuan, I contributed to the following releases.</p>
+      <div class="models">
+        <article class="model">
+          <div class="model-head"><h3>Hy4</h3><span class="badge">Nov 2026</span></div>
+          <p class="role">Contributor · Post-training</p>
+          <p class="desc">Tencent Hunyuan's flagship LLM. Scaled-up post-training over Hy4 preview, with stronger long-horizon agentic and real-world productivity capabilities, and native visual understanding.</p>
+          <p class="plinks"><a href="https://news.qq.com/rain/a/20261104A08SHF00">Release</a><a href="https://openrouter.ai/tencent">API</a></p>
+        </article>
+        <article class="model">
+          <div class="model-head"><h3>Hy4 preview</h3><span class="badge">Aug 2026</span><span class="badge accent">Open-weight</span></div>
+          <p class="role">Contributor · Post-training</p>
+          <p class="desc">770B-A49B MoE with 1M context. #1 open-source model on Terminal Bench 2.1 and SWE-bench Multilingual at release.</p>
+          <p class="plinks"><a href="https://huggingface.co/tencent/Hy4-preview">Hugging Face</a><a href="https://github.com/Tencent-Hunyuan/Hy4-preview">GitHub</a></p>
+        </article>
+      </div>
+    </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <heading style="padding:20px">Publications</heading>
+    <!-- ===== Publications ===== -->
+    <section id="publications">
+      <h2>Publications</h2>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/EMPO.png" alt="clean-usnob" width="320" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Right Question is Already Half the Answer: Fully Unsupervised LLM Reasoning Incentivization</papertitle>
-              <br>
-              <br>
-              <strong>Qingyang Zhang</strong>, Haitao Wu, Changqing Zhang, Peilin Zhao, Yatao Bian
-              <br>
-              <br>
-              <em>NeurIPS <strong>Spotlight</strong></em>, 2025
-              <br>
-              <br>
-              <a href="https://arxiv.org/abs/2504.05812">arXiv</a> / <a href="https://github.com/QingyangZhang/EMPO"> code </a>
-              </a>
-              <br>
-              <br>
-              <p>Incentivizate LLM's reasoning capability without any external supervision (human-verified reasoning trace, golden answer or pretrained reward model).</p>
-            </td>
-          </tr>
+      <article class="paper">
+        <div class="thumb"><img src="images/EMPO.png" alt="EMPO"></div>
+        <div class="info">
+          <h3>Right Question is Already Half the Answer: Fully Unsupervised LLM Reasoning Incentivization</h3>
+          <p class="authors"><b>Qingyang Zhang</b>, Haitao Wu, Changqing Zhang, Peilin Zhao, Yatao Bian</p>
+          <p class="venue"><span class="badge">NeurIPS 2025</span><span class="badge accent">Spotlight</span></p>
+          <p class="desc">Incentivize LLM reasoning without any external supervision (human-verified reasoning traces, golden answers or pretrained reward models).</p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2504.05812">Paper</a><a href="https://github.com/QingyangZhang/EMPO">Code</a></p>
+        </div>
+      </article>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/COME-poster.png" alt="clean-usnob" width="320" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>COME: Test-time Adaption by Conservatively Minimizing Entropy </papertitle>
-              <br>
-              <br>
-              <strong>Qingyang Zhang</strong>, Yatao Bian, Xinke Kong, Peilin Zhao and Changqing Zhang
-              <br>
-              <br>
-              <em>ICLR</em>, 2025
-              <br>
-              <br>
-              <a href="https://openreview.net/pdf?id=506BjJ1ziZ">arXiv</a> / <a href="hhttps://github.com/BlueWhaleLab/COME">code
-              </a>
-              <br>
-              <br>
-              <p>A simple learning principle for test time adaption.</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/DUL-poster.png" alt="clean-usnob" width="320" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>The Best of both Worlds: On the Dilemma of Out-of-Distribution Detection </papertitle>
-              <br>
-              <br>
-              <strong>Qingyang Zhang</strong>, Qiuxuan Feng, Joey Tianyi Zhou, Yatao Bian, Qinghua Hu and Changqing Zhang
-              <br>
-              <br>
-              <em>NeurIPS</em>, 2024
-              <br>
-              <br>
-              <a href="https://arxiv.org/pdf/2410.11576">arXiv</a> / <a href="https://github.com/QingyangZhang/DUL">code
-              </a>
-              <br>
-              <br>
-              <p>Solve conflicts between OOD detection and generalization for dual-optimal performance.</p>
-            </td>
-          </tr>
+      <article class="paper">
+        <div class="thumb"><img src="images/COME-poster.png" alt="COME"></div>
+        <div class="info">
+          <h3>COME: Test-time Adaption by Conservatively Minimizing Entropy</h3>
+          <p class="authors"><b>Qingyang Zhang</b>, Yatao Bian, Xinke Kong, Peilin Zhao, Changqing Zhang</p>
+          <p class="venue"><span class="badge">ICLR 2025</span></p>
+          <p class="desc">A simple learning principle for test-time adaptation.</p>
+          <p class="plinks"><a href="https://openreview.net/pdf?id=506BjJ1ziZ">Paper</a><a href="https://github.com/BlueWhaleLab/COME">Code</a></p>
+        </div>
+      </article>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/qmf.jpg" alt="clean-usnob" width="320" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Provable Dynamic Fusion for Low-quality Multimodal Learning</papertitle>
-              <br>
-              <br>
-              <strong>Qingyang Zhang</strong>, Haitao Wu, Changqing Zhang, Qinghua Hu, Huazhu Fu, Joey Tianyi Zhou, Xi Peng
-              <br>
-              <br>
-              <em>ICML</em>, 2023
-              <br>
-              <a href="https://proceedings.mlr.press/v202/zhang23ar/zhang23ar.pdf">arXiv</a> / <a href="https://github.com/QingyangZhang/QMF">code
-              </a>
-              <br>
-              <p>Theory-inspired dynimical fuse strategy for quality-varying modalities in real world.</p>
-            </td>
-          </tr>
+      <article class="paper">
+        <div class="thumb"><img src="images/DUL-poster.png" alt="DUL"></div>
+        <div class="info">
+          <h3>The Best of Both Worlds: On the Dilemma of Out-of-Distribution Detection</h3>
+          <p class="authors"><b>Qingyang Zhang</b>, Qiuxuan Feng, Joey Tianyi Zhou, Yatao Bian, Qinghua Hu, Changqing Zhang</p>
+          <p class="venue"><span class="badge">NeurIPS 2024</span></p>
+          <p class="desc">Resolve the conflict between OOD detection and generalization for dual-optimal performance.</p>
+          <p class="plinks"><a href="https://arxiv.org/pdf/2410.11576">Paper</a><a href="https://github.com/QingyangZhang/DUL">Code</a></p>
+        </div>
+      </article>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cml.jpg" alt="clean-usnob" width="320" height="160">
-            </td>
-            <td width="75%" valign="middle">
-              <papertitle>Calibrating Multimodal Learning</papertitle>
-              <br>
-              <br>
-              Huan Ma, <strong>Qingyang Zhang (co-first author)</strong>, Changqing Zhang, Bingzhe Wu, Huazhu Fu, Joey Tianyi Zhou, Qinghua Hu
-              <br>
-              <br>
-              <em>ICML <strong>Oral</strong></em>, 2023
-              <br>
-              <a href="https://proceedings.mlr.press/v202/ma23i/ma23i.pdf">arXiv</a> / <a href="https://github.com/QingyangZhang/CML">code
-              </a>
-              <br>
-              <p>Mitigate the greedy nature of multimodal learning by regularizing the model confidence.</p>
-            </td>
-          </tr>
+      <article class="paper">
+        <div class="thumb"><img src="images/qmf.jpg" alt="QMF"></div>
+        <div class="info">
+          <h3>Provable Dynamic Fusion for Low-quality Multimodal Learning</h3>
+          <p class="authors"><b>Qingyang Zhang</b>, Haitao Wu, Changqing Zhang, Qinghua Hu, Huazhu Fu, Joey Tianyi Zhou, Xi Peng</p>
+          <p class="venue"><span class="badge">ICML 2023</span></p>
+          <p class="desc">Theory-inspired dynamic fusion strategy for quality-varying modalities in the real world.</p>
+          <p class="plinks"><a href="https://proceedings.mlr.press/v202/zhang23ar/zhang23ar.pdf">Paper</a><a href="https://github.com/QingyangZhang/QMF">Code</a></p>
+        </div>
+      </article>
 
-        </tbody></table>
+      <article class="paper">
+        <div class="thumb"><img src="images/cml.jpg" alt="CML"></div>
+        <div class="info">
+          <h3>Calibrating Multimodal Learning</h3>
+          <p class="authors">Huan Ma, <b>Qingyang Zhang</b><sup>*</sup>, Changqing Zhang, Bingzhe Wu, Huazhu Fu, Joey Tianyi Zhou, Qinghua Hu <span class="note">(*co-first author)</span></p>
+          <p class="venue"><span class="badge">ICML 2023</span><span class="badge accent">Oral</span></p>
+          <p class="desc">Mitigate the greedy nature of multimodal learning by regularizing model confidence.</p>
+          <p class="plinks"><a href="https://proceedings.mlr.press/v202/ma23i/ma23i.pdf">Paper</a><a href="https://github.com/QingyangZhang/CML">Code</a></p>
+        </div>
+      </article>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-      <heading style="padding:20px">Survey</heading>
-      <tr>
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <img src="images/low_quality.jpg" alt="clean-usnob" width="320" height="160">
-        </td>
-        <td width="75%" valign="middle">
-          <papertitle>Multimodal Fusion on Low-quality Data: A Comprehensive Survey</papertitle>
-          <br>
-          <br>
-          <strong>Qingyang Zhang</strong>, Yake Wei, Zongbo Han, Huazhu Fu, Xi Peng, Cheng Deng, Qinghua Hu, Cai Xu, Jie Wen, <a href="https://dtaoo.github.io">Di Hu</a>, Changqing Zhang
-          <br>
-          <br>
+      <h2 class="sub">Survey</h2>
+      <article class="paper">
+        <div class="thumb"><img src="images/low_quality.jpg" alt="Survey"></div>
+        <div class="info">
+          <h3>Multimodal Fusion on Low-quality Data: A Comprehensive Survey</h3>
+          <p class="authors"><b>Qingyang Zhang</b>, Yake Wei, Zongbo Han, Huazhu Fu, Xi Peng, Cheng Deng, Qinghua Hu, Cai Xu, Jie Wen, <a href="https://dtaoo.github.io">Di Hu</a>, Changqing Zhang</p>
+          <p class="venue"><span class="badge">arXiv 2024</span></p>
+          <p class="desc">A systematic survey on fusion of low-quality multimodal data.</p>
+          <p class="plinks"><a href="https://arxiv.org/abs/2404.18947">Paper</a><a href="https://github.com/QingyangZhang/awesome-low-quality-multimodal-learning">Awesome List</a></p>
+        </div>
+      </article>
+    </section>
 
-          <br>
-          <a href="https://arxiv.org/abs/2404.18947">arXiv</a> / <a href="https://github.com/QingyangZhang/awesome-low-quality-multimodal-learning">awesome list</a>
-          <br>
-          <p>A systematical survey about fusion of low-quality multi-modal data.</p>
-        </td>
-      </tr>
+    <!-- ===== Experience ===== -->
+    <section id="experience">
+      <h2>Internships</h2>
+      <ul class="timeline">
+        <li>
+          <div class="tl-head"><b>Tencent Hunyuan LLM</b> <span class="muted">· Post-train Team · Qingyun Talent Program</span><span class="tl-date">2026.05 – Present</span></div>
+          <p>LLM post-training. Contributed to Hy4 preview and Hy4.</p>
+        </li>
+        <li>
+          <div class="tl-head"><b>Shanghai AI Lab</b> <span class="muted">· P1 Team</span><span class="tl-date">2025.06 – 2026.03</span></div>
+          <p>Mentor: Dr. Ganqu Cui. LLM RL post-training, helping the model achieve IPhO gold medal level.</p>
+        </li>
+        <li>
+          <div class="tl-head"><b>Tencent AI Lab</b> <span class="muted">· Machine Learning Group</span><span class="tl-date">2024.04 – 2025.05</span></div>
+          <p>Mentors: Dr. Yatao Bian, Dr. Peilin Zhao. Published 3 papers (NeurIPS Spotlight, ICLR, NeurIPS) during the internship.</p>
+        </li>
+      </ul>
+    </section>
 
-    </tbody></table>
+    <!-- ===== Misc ===== -->
+    <section id="misc" class="misc">
+      <div>
+        <h2>Services</h2>
+        <p><b>Conference Reviewer:</b> ICLR 2022–2026, NeurIPS 2023–2025, ICML 2024–2025</p>
+      </div>
+      <div>
+        <h2>Invited Talks</h2>
+        <p>"LLM RL with Internal Rewards" @ BUAA, Huawei 2012 Lab</p>
+      </div>
+      <div>
+        <h2>Awards</h2>
+        <p><b>National Scholarship</b> (twice, top 1%), 2022, 2023</p>
+      </div>
+    </section>
 
-    <br>
-
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Internships</heading>
-          <p>
-            <strong>Tencent Hunyuan LLM</strong> (Qingyun Talent Program), 2026.05 – Present <br>
-            LLM reasoning and test-time scaling.
-          </p>
-          <p>
-            <strong>Shanghai AI Lab</strong>, P1 Team, 2025.06 – 2026.03 <br>
-            Mentor: Dr. Ganqu Cui. LLM RL post-training, helping the model achieve IPhO gold medal level.
-          </p>
-          <p>
-            <strong>Tencent AI Lab</strong>, Machine Learning Group, 2024.04 – 2025.05 <br>
-            Mentors: Dr. Yatao Bian, Dr. Peilin Zhao. Published 3 papers (NeurIPS Spotlight, ICLR, NeurIPS) during the internship.
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-
-    <br>
-
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Services</heading>
-          <p>
-            <strong>Conference Reviewer:</strong> ICLR 2022-2026, NeurIPS 2023-2025, ICML 2024-2025
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Invited Talks</heading>
-          <p>
-            "LLM RL with Internal Rewards" @ BUAA and Huawei 2012 Lab
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Awards</heading>
-          <p>
-            <strong>National Scholarship (twice, 1%)</strong> 2022, 2023
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <p font-size:small;>
-                <br>
-                <br>
-                <div style="float:left;">
-                    Last updated at May 2026
-                </div>
-                <div style="float:right;">
-                    Thanks <a href="https://jonbarron.info">Jon Barron</a> for this amazing template.
-                </div>
-                <br>
-                <br>
-            </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <footer>
+      <span>Last updated: Nov 2026</span>
+      <span>Based on <a href="https://jonbarron.info">Jon Barron</a>'s template.</span>
+    </footer>
+  </main>
 </body>
-
 </html>
