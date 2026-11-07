@@ -208,3 +208,11 @@ footer {
 .plinks a.stat:hover { color: var(--accent); border-color: var(--accent); }
 .plinks a.stat[data-star] svg { fill: #e3b341; }
 .chip-count { margin-left: 4px; padding-left: 8px; border-left: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+
+/* ---------- Callout ---------- */
+.profile p.callout {
+  margin: 4px 0 12px; padding: 10px 14px;
+  background: var(--hl-soft); border-left: 3px solid var(--hl); border-radius: 8px;
+  font-size: 14px;
+}
+.callout b { color: var(--hl); }
