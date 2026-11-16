@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-15",
-  "total_citations": 958,
+  "updated": "2026-11-16",
+  "total_citations": 962,
   "papers": {
     "qmf": {
-      "citations": 319,
+      "citations": 322,
       "stars": 133
     },
     "survey": {
@@ -11,7 +11,7 @@
       "stars": 53
     },
     "empo": {
-      "citations": 145,
+      "citations": 146,
       "stars": 106
     },
     "cml": {
