@@ -1,29 +1,29 @@
 {
-  "updated": "2026-11-23",
-  "total_citations": 962,
+  "updated": "2026-11-24",
+  "total_citations": 978,
   "papers": {
     "qmf": {
-      "citations": 322,
+      "citations": 327,
       "stars": 133
     },
     "survey": {
-      "citations": 269,
+      "citations": 273,
       "stars": 53
     },
     "empo": {
-      "citations": 146,
+      "citations": 148,
       "stars": 106
     },
     "cml": {
-      "citations": 93,
+      "citations": 95,
       "stars": 20
     },
     "come": {
-      "citations": 52,
+      "citations": 53,
       "stars": 24
     },
     "dul": {
-      "citations": 20,
+      "citations": 21,
       "stars": 11
     }
   }
