@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-24",
-  "total_citations": 978,
+  "updated": "2026-11-25",
+  "total_citations": 979,
   "papers": {
     "qmf": {
       "citations": 327,
       "stars": 133
     },
     "survey": {
-      "citations": 273,
+      "citations": 274,
       "stars": 53
     },
     "empo": {
